@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Memory Lane</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Page 1: Intro -->
+  <section class="intro" id="intro">
+    <div class="intro-content">
+      <h1>📜 My Memory Lane</h1>
+      <p>A personal timeline app to reflect on your life’s milestones. Scroll down and start building your story.</p>
+      <button onclick="document.getElementById('app').scrollIntoView({ behavior: 'smooth' })">Explore Timeline</button>
+    </div>
+  </section>
+
+  <!-- Page 2: Timeline App -->
+  <section class="app" id="app">
+    <header>
+      <h2>🗓️ My Timeline</h2>
+    </header>
+
+    <section class="form-section">
+      <form id="eventForm">
+        <input type="text" id="title" placeholder="Event Title" required />
+        <input type="date" id="date" required />
+        <textarea id="description" placeholder="Description" required></textarea>
+        <input type="file" id="image" accept="image/*" />
+        <button type="submit">Add Event</button>
+      </form>
+    </section>
+
+    <section id="timeline" class="timeline">
+      <!-- Events appear here -->
+    </section>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
