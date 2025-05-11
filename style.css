@@ -14,7 +14,7 @@
   .intro {
     height: 100vh;
     background: url('Screenshot(5).png') center/cover no-repeat;
-    
+    background-color: #E6E6FA; 
     
     display: flex;
     align-items: center;
